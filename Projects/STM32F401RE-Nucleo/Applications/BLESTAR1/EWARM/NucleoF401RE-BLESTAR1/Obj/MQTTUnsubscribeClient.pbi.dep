@@ -1,0 +1,18 @@
+MQTTUnsubscribeClient.pbi: \
+  C:\Matteo\BLE\ master\ project\en.fp-net-blestar1_AI_to_UART\Middlewares\Third_Parties\paho.mqtt.embedded-c\MQTTPacket\src\MQTTUnsubscribeClient.c \
+  C:\Matteo\BLE\ master\ project\en.fp-net-blestar1_AI_to_UART\Middlewares\Third_Parties\paho.mqtt.embedded-c\MQTTPacket\src/MQTTPacket.h \
+  C:\Matteo\BLE\ master\ project\en.fp-net-blestar1_AI_to_UART\Middlewares\Third_Parties\paho.mqtt.embedded-c\MQTTPacket\src/MQTTConnect.h \
+  C:\Matteo\BLE\ master\ project\en.fp-net-blestar1_AI_to_UART\Middlewares\Third_Parties\paho.mqtt.embedded-c\MQTTPacket\src/MQTTPublish.h \
+  C:\Matteo\BLE\ master\ project\en.fp-net-blestar1_AI_to_UART\Middlewares\Third_Parties\paho.mqtt.embedded-c\MQTTPacket\src/MQTTSubscribe.h \
+  C:\Matteo\BLE\ master\ project\en.fp-net-blestar1_AI_to_UART\Middlewares\Third_Parties\paho.mqtt.embedded-c\MQTTPacket\src/MQTTUnsubscribe.h \
+  C:\Matteo\BLE\ master\ project\en.fp-net-blestar1_AI_to_UART\Middlewares\Third_Parties\paho.mqtt.embedded-c\MQTTPacket\src/MQTTFormat.h \
+  C:\Matteo\BLE\ master\ project\en.fp-net-blestar1_AI_to_UART\Middlewares\Third_Parties\paho.mqtt.embedded-c\MQTTPacket\src/StackTrace.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\stdio.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\ycheck.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\yvals.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Defaults.h \
+  C:\\Program\ Files\ (x86)\\IAR\ Systems\\Embedded\ Workbench\ 8.3\\arm\\inc\\c\\DLib_Config_Full.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Product.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\ysizet.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\string.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Product_string.h

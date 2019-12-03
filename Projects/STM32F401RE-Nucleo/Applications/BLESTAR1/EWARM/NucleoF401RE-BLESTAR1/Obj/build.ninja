@@ -1,0 +1,93 @@
+#Generating source browse information for project Project
+
+
+#Abbreviations
+cc = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\SourceIndexer.exe
+ll = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\PbdLink.exe
+bd = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\makeBrowseData.exe
+
+
+
+#Rules
+rule index
+  depfile = $out.dep
+  command = $cc -out=$out -f $in
+rule link
+  command = $ll -M $out $in
+rule browsedata
+  command = $bd $in -output  $out
+
+
+
+#Build steps
+build ble_master_service.pbi : index ble_master_service.xcl
+build ble_slave_service.pbi : index ble_slave_service.xcl
+build console.pbi : index console.xcl
+build cube_hal_f4.pbi : index cube_hal_f4.xcl
+build IBM_Bluemix_Config.pbi : index IBM_Bluemix_Config.xcl
+build main.pbi : index main.xcl
+build stm32f4xx_hal_msp.pbi : index stm32f4xx_hal_msp.xcl
+build stm32xx_it.pbi : index stm32xx_it.xcl
+build wifi_support.pbi : index wifi_support.xcl
+build stm32f4xx_nucleo.pbi : index stm32f4xx_nucleo.xcl
+build stm32_bluenrg_ble.pbi : index stm32_bluenrg_ble.xcl
+build stm32_spwf_wifi.pbi : index stm32_spwf_wifi.xcl
+build system_stm32f4xx.pbi : index system_stm32f4xx.xcl
+build stm32f4xx_hal.pbi : index stm32f4xx_hal.xcl
+build stm32f4xx_hal_adc.pbi : index stm32f4xx_hal_adc.xcl
+build stm32f4xx_hal_adc_ex.pbi : index stm32f4xx_hal_adc_ex.xcl
+build stm32f4xx_hal_cortex.pbi : index stm32f4xx_hal_cortex.xcl
+build stm32f4xx_hal_dma.pbi : index stm32f4xx_hal_dma.xcl
+build stm32f4xx_hal_flash.pbi : index stm32f4xx_hal_flash.xcl
+build stm32f4xx_hal_flash_ex.pbi : index stm32f4xx_hal_flash_ex.xcl
+build stm32f4xx_hal_gpio.pbi : index stm32f4xx_hal_gpio.xcl
+build stm32f4xx_hal_pwr.pbi : index stm32f4xx_hal_pwr.xcl
+build stm32f4xx_hal_pwr_ex.pbi : index stm32f4xx_hal_pwr_ex.xcl
+build stm32f4xx_hal_rcc.pbi : index stm32f4xx_hal_rcc.xcl
+build stm32f4xx_hal_rcc_ex.pbi : index stm32f4xx_hal_rcc_ex.xcl
+build stm32f4xx_hal_spi.pbi : index stm32f4xx_hal_spi.xcl
+build stm32f4xx_hal_sram.pbi : index stm32f4xx_hal_sram.xcl
+build stm32f4xx_hal_tim.pbi : index stm32f4xx_hal_tim.xcl
+build stm32f4xx_hal_tim_ex.pbi : index stm32f4xx_hal_tim_ex.xcl
+build stm32f4xx_hal_uart.pbi : index stm32f4xx_hal_uart.xcl
+build bluenrg_gap_aci.pbi : index bluenrg_gap_aci.xcl
+build bluenrg_gatt_aci.pbi : index bluenrg_gatt_aci.xcl
+build bluenrg_hal_aci.pbi : index bluenrg_hal_aci.xcl
+build bluenrg_l2cap_aci.pbi : index bluenrg_l2cap_aci.xcl
+build bluenrg_utils_small.pbi : index bluenrg_utils_small.xcl
+build hci.pbi : index hci.xcl
+build hci_le.pbi : index hci_le.xcl
+build bluenrg_itf.pbi : index bluenrg_itf.xcl
+build ble_list.pbi : index ble_list.xcl
+build gp_timer.pbi : index gp_timer.xcl
+build osal.pbi : index osal.xcl
+build event_buffer.pbi : index event_buffer.xcl
+build ring_buffer.pbi : index ring_buffer.xcl
+build wifi_globals.pbi : index wifi_globals.xcl
+build wifi_interface.pbi : index wifi_interface.xcl
+build wifi_module.pbi : index wifi_module.xcl
+build MQTTClient.pbi : index MQTTClient.xcl
+build MQTTConnectClient.pbi : index MQTTConnectClient.xcl
+build MQTTConnectServer.pbi : index MQTTConnectServer.xcl
+build MQTTDeserializePublish.pbi : index MQTTDeserializePublish.xcl
+build MQTTFormat.pbi : index MQTTFormat.xcl
+build MQTTPacket.pbi : index MQTTPacket.xcl
+build MQTTSerializePublish.pbi : index MQTTSerializePublish.xcl
+build MQTTSubscribeClient.pbi : index MQTTSubscribeClient.xcl
+build MQTTSubscribeServer.pbi : index MQTTSubscribeServer.xcl
+build MQTTUnsubscribeClient.pbi : index MQTTUnsubscribeClient.xcl
+build MQTTUnsubscribeServer.pbi : index MQTTUnsubscribeServer.xcl
+build TLocalBuffer.pbi : index TLocalBuffer.xcl
+build MQTT_SPWF_interface.pbi : index MQTT_SPWF_interface.xcl
+build Project_part0.pbi : link ble_master_service.pbi ble_slave_service.pbi console.pbi cube_hal_f4.pbi IBM_Bluemix_Config.pbi main.pbi stm32f4xx_hal_msp.pbi stm32xx_it.pbi
+build Project_part1.pbi : link wifi_support.pbi stm32f4xx_nucleo.pbi stm32_bluenrg_ble.pbi stm32_spwf_wifi.pbi system_stm32f4xx.pbi stm32f4xx_hal.pbi stm32f4xx_hal_adc.pbi stm32f4xx_hal_adc_ex.pbi
+build Project_part2.pbi : link stm32f4xx_hal_cortex.pbi stm32f4xx_hal_dma.pbi stm32f4xx_hal_flash.pbi stm32f4xx_hal_flash_ex.pbi stm32f4xx_hal_gpio.pbi stm32f4xx_hal_pwr.pbi stm32f4xx_hal_pwr_ex.pbi stm32f4xx_hal_rcc.pbi
+build Project_part3.pbi : link stm32f4xx_hal_rcc_ex.pbi stm32f4xx_hal_spi.pbi stm32f4xx_hal_sram.pbi stm32f4xx_hal_tim.pbi stm32f4xx_hal_tim_ex.pbi stm32f4xx_hal_uart.pbi bluenrg_gap_aci.pbi bluenrg_gatt_aci.pbi
+build Project_part4.pbi : link bluenrg_hal_aci.pbi bluenrg_l2cap_aci.pbi bluenrg_utils_small.pbi hci.pbi hci_le.pbi bluenrg_itf.pbi ble_list.pbi gp_timer.pbi
+build Project_part5.pbi : link osal.pbi event_buffer.pbi ring_buffer.pbi wifi_globals.pbi wifi_interface.pbi wifi_module.pbi MQTTClient.pbi MQTTConnectClient.pbi
+build Project_part6.pbi : link MQTTConnectServer.pbi MQTTDeserializePublish.pbi MQTTFormat.pbi MQTTPacket.pbi MQTTSerializePublish.pbi MQTTSubscribeClient.pbi MQTTSubscribeServer.pbi MQTTUnsubscribeClient.pbi
+build Project_part7.pbi : link MQTTUnsubscribeServer.pbi TLocalBuffer.pbi MQTT_SPWF_interface.pbi
+build Project.pbd : link Project_part0.pbi Project_part1.pbi Project_part2.pbi Project_part3.pbi Project_part4.pbi Project_part5.pbi Project_part6.pbi Project_part7.pbi
+build Project.pbw : browsedata Project.pbd
+
+
