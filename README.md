@@ -11,3 +11,5 @@ The FW projects is based on the FP-NET-BLESTAR1 Function Pack FW project for STM
   If it's needed to connect the BLE master to other boards (ST BlueCoin, Sensortile, ...) need to uncomment line 1602 of ble_master_service.c file (function "GAP_Start_General_Discovery_CB").
 - Support of new BLE service for retrieving AI results data. This can be used both with the FP-AI-SENSING1 functional pack (https://www.st.com/content/st_com/en/products/embedded-software/mcu-mpu-embedded-software/stm32-embedded-software/stm32-ode-function-pack-sw/fp-ai-sensing1.html) or with the MLC project for SensorTile.box FP-SNS-STBOX1 (https://www.st.com/content/st_com/en/products/embedded-software/mcu-mpu-embedded-software/stm32-embedded-software/stm32-ode-function-pack-sw/fp-sns-stbox1.html)
 - AI Result data are sent to UART1 serial port of STM32F401 (UART1_TX >> PA9, UART1_RX >> PA10)
+
+It's possible to check all modifications applied to original FP-NET-BLESTAR1 project by searching "Matteo" keyword in the comments to the source code.
